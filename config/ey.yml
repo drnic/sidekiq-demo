@@ -1,0 +1,5 @@
+---
+environments:
+  sidekiqdemo:
+    migrate: true
+    migration_command: rake db:migrate
