@@ -40,3 +40,6 @@ gem 'jquery-rails'
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
 gem "sidekiq"
+# for sidekiq web console
+gem "sinatra"
+gem "slim"

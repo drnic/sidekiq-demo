@@ -4,6 +4,9 @@ SidekiqDemo::Application.routes.draw do
   get "home/index"
   match '/create_job' => 'home#create_job'
 
+  require 'sidekiq/web'
+  mount Sidekiq::Web.new, :at => "/sidekiq/1234"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
